@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import com.github.hackathon.advancedsecurityjava.Application;
 import com.github.hackathon.advancedsecurityjava.Models.Book;
 
@@ -20,7 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class IndexController {
 
   private static Connection connection;
-
+  // Este es un cambio de ejemplo 
   @GetMapping("/")
   @ResponseBody
   public List<Book> getBooks(@RequestParam(name = "name", required = false) String bookname,
